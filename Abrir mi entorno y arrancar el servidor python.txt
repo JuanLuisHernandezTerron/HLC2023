@@ -1,0 +1,5 @@
+1. Desde la terminal, tenemos que abrir el activated.bat o ./activate en powerShell
+2.Para arrancar el servidor, tendremos que desde la terminal, donde esté el manage.py, poner 'python manage.py runserver'
+
+
+si es la primera vez, tendremos que ahcer python manage.py migrate antes del runserver

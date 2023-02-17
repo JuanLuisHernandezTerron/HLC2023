@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<style>
+    .header {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        background-color: darkcyan;
+        text-align: center;
+    }
+
+    .footer {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        background-color: darkcyan;
+        text-align: right;
+    }
+
+</style>
+<body>
+    <h1 class="header">Título común a todas las páginas que hereden de esta plantilla</h1>
+    {% include "barra.html" %}
+    <h3>Subtítulo común a todas las páginas que hereden de esta plantilla</h3>
+    {% block content %}{% endblock %}
+    <p class="footer">Párrafo común a modo de footer</p>
+</body>
+</html>
